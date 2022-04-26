@@ -41,7 +41,7 @@
 
 .project-details {
   &__content {
-    padding: 8rem 0;
+    padding: 8rem 0 7rem;
     max-width: 90rem;
     margin: auto;
 
@@ -52,6 +52,9 @@
       @include respond(phone) {
         font-size: 2.4rem;
       }
+    }
+    @include respond(phone){
+      padding: 8rem 0 0;
     }
   }
 
@@ -79,7 +82,8 @@
     }
   }
   &__tools-used {
-    margin: 0 0 7rem 0;
+    margin: 0 0 5rem 0;
+    
 
     &-list {
       display: flex;
@@ -114,4 +118,10 @@
       }
     }
   }
+  
 }
+#project-button{
+  text-align: center;
+}
+
+
