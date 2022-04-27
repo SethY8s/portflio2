@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
+    <title>Seth Project One</title>
+    <link rel="icon" href="./assets/png/logi.png" />
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -15,80 +16,147 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <span class="header__logo-sub">Seth Martin Yates</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Resume </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
             />
-          </div>
-          
-          <div class="project-details__content-main">
-
-
-            <div class="project-details__links">
-             
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
-            </div>
-
-            <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
-              <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
-              </div>
-            </div>
-
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
-              </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
-              </p>
-            </div>
-            
-            
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
           </div>
         </div>
       </div>
-    </section>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Resume </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="project-details">
+        <div class="main-container">
+          <div class="project-details__content">
+            <div id="prodject-title" class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Project Image"
+                class="project-details__showcase-img"
+                id="project-img"
+              />
+              <div id="project-button" class="project-details__links">
+                <a
+                  href="https://brittany-art.com"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/SethY8s/BrittanyShop"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >Code Link</a
+                >
+              </div>
+            </div>
+
+            <div class="project-details__content-main">
+              <div class="project-details__tools-used">
+                <h3 class="project-details__content-title">Tools Used</h3>
+                <div class="skills">
+                  <div class="skills__skill">React</div>
+                  <div class="skills__skill">React-Bootstrap</div>
+                  <div class="skills__skill">Sass</div>
+                  <div class="skills__skill">FireBase API</div>
+                  <div class="skills__skill">useContext</div>
+                  <div class="skills__skill">React-Routing</div>
+                </div>
+              </div>
+
+              <div class="project-details__desc">
+                <h3 class="project-details__content-title">Project Overview</h3>
+                <p class="project-details__desc-para">
+                  <b>Features for Users: </b> A dynamic, responsive e-commerce
+                  site. This site allows users to interact and buy artwork
+                  intuitively. Users are able to add items, view items, delete
+                  items, and checkout and pay. Depending on the outcome of the
+                  checkout, users are either directed back to the home page,
+                  with a 'welcome back' toast, or to a 'Thank you' page. With
+                  Stripe Payment you can set up automatic email recite, so the
+                  user will get a confirmation after purchase. This site is in
+                  active use, and my client is very happy with it.
+                </p>
+                <p class="project-details__desc-para">
+                  <b>Implamentation: </b>This site was built in two separate
+                  parts. The <b>FrontEnd(hosted on Nelify)</b> and the
+                  <b>BackEnd(hosted on Heroku)</b>. The FrontEnd was built with
+                  <b>react-bootstrap</b>. The FrontEnd can be broken down into
+                  four key parts. <b>Routing</b>, allows users to instantly go
+                  to separate pages. The <b>Context</b>, this is where all the
+                  global state is stored. The Cart, CurrentItem, Products, and
+                  functions are all stored in this context. The <b>Reducer</b>,
+                  allows users to modify the state in the context(add, delete
+                  items). The <b>Axios</b> API call is what connects to the
+                  BackEnd by sending the current Cart data. <br />The
+                  <b>BackEnd</b> was built with <b>node.js</b> and
+                  <b>Express</b>. It receives the POST request from the FrontEnd
+                  and dynamically builds the prebuilt Stripe Payment page, using
+                  the <b>Stripe Payment API</b>. If the payment is a success
+                  then users are sent to the 'Thankyou' page or if it was
+                  canceled sent to the Home screen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -97,53 +165,57 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/seth-yates-9ba83b238/"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/SethY8s"
+                target="_blank"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
+              <a>
+                <svg
                   class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-file-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                  />
+                  <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Seth Yates</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Thank you for checking out my porfolio, I hope you enjoyed my work
+              :)
             </p>
           </div>
         </div>
 
-        
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
       </div>
     </footer>
     <script src="./index.js"></script>
