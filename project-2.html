@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Seth Project One</title>
+    <title>Seth Crypto Calculator</title>
     <link rel="icon" href="./assets/png/logi.png" />
     <meta name="description" content="Case study page of Project" />
 
@@ -126,26 +126,31 @@
               <div class="project-details__desc">
                 <h3 class="project-details__content-title">Project Overview</h3>
                 <p class="project-details__desc-para">
-                  <b>Features for Users: </b> Users are able to calculate their crypto trades and save them, or delete them.
+                  <b>Features for Users: </b> Users are able to view the current
+                  top ten crypto tokens/coins. With this information, users are
+                  able to calculate their gain/loss on trade of one of these top
+                  ten tokens. If users are authenticated their data will be
+                  saved, so when they return their information will still be
+                  there. They also have the ability to remove old trades.
                 </p>
                 <p class="project-details__desc-para">
-                  <b>Implamentation: </b>This site was built in two separate
-                  parts. The <b>FrontEnd(hosted on Nelify)</b> and the
-                  <b>BackEnd(hosted on Heroku)</b>. The FrontEnd was built with
-                  <b>react-bootstrap</b>. The FrontEnd can be broken down into
-                  four key parts. <b>Routing</b>, allows users to instantly go
-                  to separate pages. The <b>Context</b>, this is where all the
-                  global state is stored. The Cart, CurrentItem, Products, and
-                  functions are all stored in this context. The <b>Reducer</b>,
-                  allows users to modify the state in the context(add, delete
-                  items). The <b>Axios</b> API call is what connects to the
-                  BackEnd by sending the current Cart data. <br />The
-                  <b>BackEnd</b> was built with <b>node.js</b> and
-                  <b>Express</b>. It receives the POST request from the FrontEnd
-                  and dynamically builds the prebuilt Stripe Payment page, using
-                  the <b>Stripe Payment API</b>. If the payment is a success
-                  then users are sent to the 'Thankyou' page or if it was
-                  canceled sent to the Home screen.
+                  Implamentation: This site implements the <b>CoinMarketCap API</b> for
+                  all of the crypto data. The CoinMarketCap API can not be
+                  called directly from the FrontEnd, so <b>node-fetch</b> had to be
+                  implemented to fetch this data. This data is then sent to the
+                  FrontEnd as <b>JSON</b>, filling the table, as well as the trade
+                  calculator. If the user is authenticated using <b>Auth0</b>, the
+                  server will send a response, conditionally rendering a
+                  logout button instead of a login button. Anyone can calculate a trade, however,
+                  submitting data to <b>Mongo Atlas</b> requires that the user is
+                  logged in. Once logged in all trades after logging in will be
+                  sent to the server as an object. This data then populates a
+                  new <b>Mongoose Schema</b> and properly saves it in MongoDB for
+                  future logins. When a user refreshes the page or logs in
+                  again, a call is made to MongoDB fetching that user's data, by
+                  username. The exact same practice was used in deleting posts.
+                  Posts have <b>a specific id</b>, so clicking delete finds the proper
+                  user, then the trade they are requesting to delete.
                 </p>
               </div>
             </div>
