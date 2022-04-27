@@ -502,11 +502,6 @@ textarea {
 #project-button {
   text-align: center; }
 
-.header-about-me {
-  font-size: 55px;
-  padding-top: 10rem;
-  height: 100vh; }
-
 .header {
   position: fixed;
   width: 100%;
@@ -716,3 +711,22 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.header-about-me {
+  font-size: 55px;
+  padding-top: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .header-about-me .picture-hello {
+    width: 60rem; }
+    .header-about-me .picture-hello h3 {
+      margin-bottom: 3rem; }
+    .header-about-me .picture-hello p {
+      font-size: 20px; }
+      .header-about-me .picture-hello p b {
+        color: #0062b9;
+        background-color: white; }
