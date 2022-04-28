@@ -722,10 +722,16 @@ textarea {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header-about-me {
+      height: fit-content; } }
   .header-about-me .picture-hello {
     width: 60rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header-about-me .picture-hello {
+        width: 90%; } }
     .header-about-me .picture-hello h3 {
-      margin-bottom: 3rem; }
+      margin-bottom: 1.5rem; }
     .header-about-me .picture-hello p {
       font-size: 17px;
       padding-bottom: 6rem; }
