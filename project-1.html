@@ -131,8 +131,8 @@
                 <p class="project-details__desc-para">
                   <b>Features for Users: </b> A dynamic, responsive e-commerce
                   site. This site allows users to interact and buy artwork
-                  intuitively. Users can add items, view items, delete
-                  items, and checkout and pay. Depending on the outcome of the
+                  intuitively. Users can add items, view items, delete items,
+                  and checkout and pay. Depending on the outcome of the
                   checkout, users are either directed back to the home page,
                   with a 'welcome back' toast, or to a 'Thank you' page. With
                   Stripe Payment you can set up automatic email recite, so the
@@ -145,8 +145,8 @@
                   <b>BackEnd(hosted on Heroku)</b>. The FrontEnd was built with
                   <b>react-bootstrap</b>. The FrontEnd can be broken down into
                   four key parts. <b>Routing</b>, allows users to instantly go
-                  to separate pages. The <b>Context</b> is where all the
-                  global state is stored. The Cart, CurrentItem, Products, and
+                  to separate pages. The <b>Context</b> is where all the global
+                  state is stored. The Cart, CurrentItem, Products, and
                   functions are all stored in this context. The <b>Reducer</b>,
                   allows users to modify the state in the context(add, delete
                   items). The <b>Axios</b> API call is what connects to the
@@ -191,40 +191,45 @@
               >
                 <img
                   class="main-footer__icon"
+                  id="iconSpacing"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
               <a>
-                <svg
-                  class="main-footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-file-person"
-                  viewBox="0 0 16 16"
+                <span
+                  class="hovertext-phone"
+                  data-hover="Phone: +1 207-706-6568"
                 >
-                  <path
-                    d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
-                  />
-                  <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                </svg>
+                  <svg
+                    class="main-footer__icon"
+                    id="iconSpacing"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-file-person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                    />
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg
+                ></span>
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Seth Yates</h4>
             <p class="main-footer__short-desc">
-              Thank you for checking out my porfolio, I hope you enjoyed my work
-              :)
+              Thank you for checking out my portfolio, I hope you enjoyed my
+              work :)
             </p>
           </div>
         </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
