@@ -37,6 +37,7 @@
 
   &__social-cont {
     margin-top: 2rem;
+    
   }
 
   &__icon {
@@ -45,7 +46,9 @@
     &--mr-none {
       margin-right: 0;
     }
+    
   }
+  
 
   &__lower {
     padding: 4rem 0;
@@ -63,4 +66,39 @@
       padding: 3.5rem 0;
     }
   }
+  #iconSpacing{
+    @include respond(tab-port){
+      margin-left: 1rem;
+    }
+  }
+}
+
+.hovertext-phone {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext-phone:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  // left: 2px;
+  // top: 110%;
+  top: 20px;
+}
+
+.hovertext-phone:hover:before {
+  opacity: 1;
+  visibility: visible;
 }

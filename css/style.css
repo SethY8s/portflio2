@@ -219,7 +219,7 @@ textarea {
     display: block;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
-    transition: background .3s; }
+    transition: background 0.3s; }
     .home-hero__social-icon-link:hover {
       background: rgba(255, 255, 255, 0.1); }
     .home-hero__social-icon-link--bd-none {
@@ -408,7 +408,31 @@ textarea {
 #nelify-spam {
   width: 300px;
   height: 85px;
-  padding-bottom: .25rem; }
+  padding-bottom: 0.25rem; }
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black; }
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 55px;
+  top: 15px; }
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible; }
 
 .project-cs-hero {
   color: #fff;
@@ -668,6 +692,33 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3.5rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .main-footer #iconSpacing {
+      margin-left: 1rem; } }
+
+.hovertext-phone {
+  position: relative;
+  border-bottom: 1px dotted black; }
+
+.hovertext-phone:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  top: 20px; }
+
+.hovertext-phone:hover:before {
+  opacity: 1;
+  visibility: visible; }
 
 .skills {
   display: flex;
@@ -731,7 +782,7 @@ textarea {
       padding-bottom: 2rem;
       text-align: center; }
     .header-about-me .picture-hello p {
-      font-size: 17px;
+      font-size: 16px;
       padding-bottom: 8rem; }
       .header-about-me .picture-hello p b {
         color: #0062b9;
