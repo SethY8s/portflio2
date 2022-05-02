@@ -11,10 +11,15 @@ It has all the information you will need to setting it properly, but if you wish
 Instrucitons:
 
 $ git clone https://github.com/SethY8s/portflio2.git
-$ cd portfolio2 
+
+$ cd portfolio2
+
 $ git remote remove origin
-Install dependencies and stylinh
+
+Install dependencies and styling
+
 $ npm install
+
 $ npm run compile:scss
 
 This is just the basic run down, again I highly recommend you checkout rammcodes version for better instructions and a blank template.
