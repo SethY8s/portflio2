@@ -24,4 +24,4 @@ $ npm run compile:scss
 
 This is just the basic run down, again I highly recommend you checkout rammcodes version for better instructions and a blank template.
 
-Notiable changes added to mine fork include, about me page, animated gifs, and modified components.
+Notiable changes added to my fork include, about me page, animated gifs, and modified components.
