@@ -37,7 +37,6 @@
 
   &__social-cont {
     margin-top: 2rem;
-    
   }
 
   &__icon {
@@ -46,9 +45,7 @@
     &--mr-none {
       margin-right: 0;
     }
-    
   }
-  
 
   &__lower {
     padding: 4rem 0;
@@ -66,8 +63,8 @@
       padding: 3.5rem 0;
     }
   }
-  #iconSpacing{
-    @include respond(tab-port){
+  #iconSpacing {
+    @include respond(tab-port) {
       margin-left: 1rem;
     }
   }
