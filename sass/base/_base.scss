@@ -62,3 +62,10 @@ button {
 textarea {
   resize: none;
 }
+
+.aboutMe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
